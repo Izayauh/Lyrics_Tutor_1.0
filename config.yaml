@@ -1,0 +1,29 @@
+paths:
+  raw_dir: data/raw
+  sqlite_path: data/metadata.db
+  chroma_dir: data/chroma
+
+chunking:
+  min_words: 80
+  max_words: 300
+  hard_max_words: 380
+
+labeling:
+  enabled: true
+  provider: google
+  model: gemini-2.5-flash
+  batch_size: 12
+  fallback_heuristic: true
+
+embeddings:
+  model_name: all-MiniLM-L6-v2
+  collection_name: narrative_chunks
+
+retrieval:
+  candidate_pool_size: 300
+  default_top_k: 5
+  vector_weight: 0.75
+  emotion_weight: 0.15
+  recency_weight: 0.10
+
+google_api_key: null

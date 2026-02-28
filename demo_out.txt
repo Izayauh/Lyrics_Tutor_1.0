@@ -1,0 +1,54 @@
+Traceback (most recent call last):
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\scripts\run_demo.py", line 86, in <module>
+    main()
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\scripts\run_demo.py", line 46, in main
+    pipeline = NarrativeMemoryPipeline(config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\narrative_memory\pipeline.py", line 31, in __init__
+    self.vector_store = ChromaVectorStore(config.paths.chroma_dir, config.embeddings)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\narrative_memory\embeddings.py", line 27, in __init__
+    self.embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\chromadb\utils\embedding_functions\sentence_transformer_embedding_function.py", line 29, in __init__
+    from sentence_transformers import SentenceTransformer
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sentence_transformers\__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sentence_transformers\backend\__init__.py", line 5, in <module>
+    from .quantize import export_dynamic_quantized_onnx_model, export_static_quantized_openvino_model
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sentence_transformers\backend\quantize.py", line 7, in <module>
+    from sentence_transformers.util import disable_datasets_caching, is_datasets_available
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sentence_transformers\util\__init__.py", line 15, in <module>
+    from .retrieval import (
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sentence_transformers\util\retrieval.py", line 14, in <module>
+    from .similarity import cos_sim
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sentence_transformers\util\similarity.py", line 5, in <module>
+    from sklearn.metrics import pairwise_distances
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sklearn\__init__.py", line 70, in <module>
+    from sklearn.base import clone  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sklearn\base.py", line 19, in <module>
+    from sklearn.utils._metadata_requests import _MetadataRequester, _routing_enabled
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sklearn\utils\__init__.py", line 9, in <module>
+    from sklearn.utils._chunking import gen_batches, gen_even_slices
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sklearn\utils\_chunking.py", line 11, in <module>
+    from sklearn.utils._param_validation import Interval, validate_params
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sklearn\utils\_param_validation.py", line 17, in <module>
+    from sklearn.utils.validation import _is_arraylike_not_scalar
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sklearn\utils\validation.py", line 24, in <module>
+    from sklearn.utils._array_api import (
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sklearn\utils\_array_api.py", line 20, in <module>
+    from sklearn.utils.fixes import parse_version
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\sklearn\utils\fixes.py", line 15, in <module>
+    import scipy.sparse.linalg
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\scipy\sparse\linalg\__init__.py", line 132, in <module>
+    from ._isolve import *
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\scipy\sparse\linalg\_isolve\__init__.py", line 4, in <module>
+    from .iterative import *
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\scipy\sparse\linalg\_isolve\iterative.py", line 5, in <module>
+    from scipy.linalg import get_lapack_funcs
+  File "C:\Users\isaia\Desktop\Orojects\Projects\Lyrics_Tutor_1.0\.venv\Lib\site-packages\scipy\linalg\__init__.py", line 202, in <module>
+    from ._cythonized_array_utils import *
+  File "scipy/linalg/_cythonized_array_utils.pyx", line 1, in init scipy.linalg._cythonized_array_utils
+KeyboardInterrupt
+^C
