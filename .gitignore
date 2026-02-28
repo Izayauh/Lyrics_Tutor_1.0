@@ -7,3 +7,6 @@ venv/
 data/chroma/
 data/*.db
 data/tmp_e2e/
+
+# Avoid committing local config
+config.yaml
